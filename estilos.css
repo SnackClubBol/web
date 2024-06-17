@@ -1,0 +1,146 @@
+:root{
+    --main-c:#FFA737;
+    --black-c:#ffffff;
+  }
+  
+  /** Estilos Generales **/
+  html{
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:visited{
+    color: inherit;
+  }
+  li{
+    list-style: none;
+  }
+  p{
+    font-size: 1.1rem;
+  }
+  h1{
+    font-size: 2.4rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+  h4{
+    font-size: 1.6rem;
+  }
+  h5{
+    font-size: 1.4rem;
+  }
+  h6{
+    font-size: 1.2rem;
+  }
+  /*hero y texto principal*/
+  .hero{
+    background: url(imagen/desayuno\ 2.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  }
+  section.hero-home-page{
+    padding: 20%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+  }
+/*menu de navegacion*/
+  nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+}
+ul li{
+  display: inline-block;
+padding: 15px 20px;
+background-color: #FFA737;
+}
+a:hover{
+color: var(--black-c);
+}
+a.logo-header:hover{
+  color: #FFA737;
+}
+/*Apartado de nosotros*/
+.Nosotros{
+  text-align: center;
+}
+.img-desc{
+  display: flex;
+padding: 50px;
+text-align: center;
+justify-content: center;
+}
+p.descripcion{
+padding:5%;
+}
+.about-img{
+  width: 320px;
+  border-radius: 1rem;
+  justify-self: center;
+}
+/*Taejetas de comida*/
+.section{
+  max-width: 1200px;
+  margin:   1rem auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  
+  }
+.tarjeta-titulo{
+  text-align: center;
+}
+.column-4{
+  display: grid;
+  align-items: center;
+  margin: 5px;
+  
+  
+  
+}
+.tarjeta-rest{
+  background-repeat:no-repeat ;
+  border-radius: 6px;
+  padding: 1rem .5rem;
+  display: flex;
+  align-items: end;
+  text-align: center;
+}
+.wrap-text_tarjeta-rest{
+  color:#fff;
+  padding: .5rem;
+  border-radius: 6px;
+  background: linear-gradient(to top,rgb(0 0 0/.5),rgb(0 0 0/.5));
+ 
+
+}
+.wrap-text_tarjeta-rest p{
+  color: #fff;
+}
+.cta-wrap_tarjeta-rest{
+  display: flex;
+  justify-content: space-between;
+
+}
+.precio_tarjeta-rest span{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
