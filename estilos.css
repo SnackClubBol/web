@@ -28,6 +28,7 @@
   }
   h2{
     font-size: 2rem;
+    margin-bottom: 15px;
   }
   h3{
     font-size: 1.8rem;
@@ -79,23 +80,25 @@ a.logo-header:hover{
   color: #FFA737;
 }
 /*Apartado de nosotros*/
-.Nosotros{
-  text-align: center;
-}
-.img-desc{
+.about{
+  padding: 100px 0;
   display: flex;
-padding: 50px;
-text-align: center;
-justify-content: center;
 }
-p.descripcion{
+.about-txt{
+width: 50%;
 padding:5%;
 }
 .about-img{
-  width: 320px;
-  border-radius: 1rem;
-  justify-self: center;
+  width: 50%;
+  border-radius: 2rem;
+  padding: 15px;
+  
 }
+.about-txt p{
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
 /*Taejetas de comida*/
 .section{
   max-width: 1200px;
@@ -143,4 +146,101 @@ padding:5%;
 .precio_tarjeta-rest span{
   font-size: 1.5rem;
   font-weight: bold;
+}
+/*pie de pagina*/
+.pie-pagina{
+  width: 100%;
+  background-color: #FFA737;
+}
+
+.pie-pagina .grupo-1{
+width: 100%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 50px;
+padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure iframe{
+  width: 100%;
+  height: 100%;
+}
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  margin-bottom: 10px;
+
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #b96b04;
+  text-align: center;
+  transition: all 300ms ease; 
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: #FFA737;
+}
+.pie-pagina .grupo-2{
+  background-color: #b96b04;
+  padding: 15px 10PX;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+
+
+@media(max-width:991px){
+  .div .hero {
+    padding: 0 30px 30px 30px;
+  }
+  .main .main-sectione {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+.about {
+padding: 0 30px 30px 30px;
+flex-direction:column;
+}
+.about-txt{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.about-img{
+  width: 100%;
+  text-align: center;
+  order: 2;
+}
+.about-img img{
+  width: 300px;
+}
+.pie-pagina .grupo-1{
+  width: 90%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  padding: 35px 0px;
+}
+
+
 }
